@@ -78,7 +78,9 @@ namespace Calc
 
         public override double GetArea()
         {
-            return Math.PI * (radius * radius);
+            if (area is not null) return (double)area;
+            area = Math.PI * (radius * radius);
+            return (double)area;
         }
 
         public override double GetPerimeter()
