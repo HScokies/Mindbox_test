@@ -87,7 +87,7 @@ namespace Calc.Tests
             var precision = 2;
 
             // Act
-            var res = circle.GetArea();
+            var res = Calc.GetArea(circle);
             var Actual = Math.Round(res, precision);
 
             // Assert
